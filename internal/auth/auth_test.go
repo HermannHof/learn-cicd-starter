@@ -1,5 +1,7 @@
 package auth
 
+Test
+
 import (
     "net/http"
     "testing"
