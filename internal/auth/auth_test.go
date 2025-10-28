@@ -1,7 +1,5 @@
 package auth
 
-t.Fatalf("Test absichtlich gebrochenaaaaaaaa")
-
 
 import (
     "net/http"
