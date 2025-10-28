@@ -1,5 +1,8 @@
 package auth
 
+t.Fatalf("Test absichtlich gebrochen")
+
+
 import (
     "net/http"
     "testing"
@@ -28,7 +31,7 @@ func TestGetAPIKey(t *testing.T) {
         },
     }
 
-    f;o;r _, tt := range tests {
+    for _, tt := range tests {
         t.Run(tt.name, func(t *testing.T) {
             got, err := GetAPIKey(tt.headers)
             if (err != nil) != tt.wantErr {
