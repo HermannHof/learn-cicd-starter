@@ -5,6 +5,7 @@ on:
     branches: [main]
 
 jobs:
+  # --- JOB 1: TESTS ---
   tests:
     name: Tests
     runs-on: ubuntu-latest
@@ -20,12 +21,12 @@ jobs:
 
       - name: Run unit tests
         run: go test -cover  ./...
-  
-style:
-    name: Style 
-    runs-on: ubuntu-latest 
-    steps:
 
+  style:
+    name: Style
+    runs-on: ubuntu-latest
+    steps:
+      
       - name: Check out code
         uses: actions/checkout@v4
 
