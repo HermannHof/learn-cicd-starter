@@ -25,7 +25,7 @@ jobs:
         with:
 
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
-
+          project_id: notely-476614
 
       - name: Build and push Docker image
         run: |-
